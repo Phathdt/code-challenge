@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2021", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@problem5/blockchain": ["libs/blockchain/src/index.ts"],
+      "@problem5/custom-logger": ["libs/custom-logger/src/index.ts"],
+      "@problem5/database": ["libs/database/src/index.ts"],
+      "@problem5/notification": ["libs/notification/src/index.ts"],
+      "@problem5/quote": ["libs/quote/src/index.ts"],
+      "@problem5/req": ["libs/req/src/index.ts"],
+      "@problem5/settlement": ["libs/settlement/src/index.ts"],
+      "@problem5/shared": ["libs/shared/src/index.ts"],
+      "@problem5/token": ["libs/token/src/index.ts"],
+      "@problem5/trade": ["libs/trade/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
