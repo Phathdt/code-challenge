@@ -11,7 +11,7 @@ import { SnakeToCamelInterceptor } from '@problem5/shared'
 import { LoggerErrorInterceptor, Logger as PinoLogger } from 'nestjs-pino'
 import { ZodValidationPipe } from 'nestjs-zod'
 
-import { AppModule } from './app/app.module'
+import { AppModule } from './app'
 import {
   ResponseExceptionFilter,
   ResponseLoggerInterceptor,

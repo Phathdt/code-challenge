@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { CustomLoggerModule } from '@problem5/custom-logger'
+import { ProductModule } from '@problem5/product'
 
 import { PrismaModule, PrismaServiceOptions } from 'nestjs-prisma'
 
@@ -29,6 +30,7 @@ const controllers = []
       },
       inject: [ConfigService],
     }),
+    ProductModule,
   ],
   controllers: [AppController, ...controllers],
   providers: [],

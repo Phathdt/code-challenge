@@ -42,6 +42,13 @@ module.exports = [
     },
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+    },
+  },
+  {
+    files: ['**/database.service.ts'],
+    rules: {
+      '@typescript-eslint/ban-ts-comment': 'off',
     },
   },
   {
